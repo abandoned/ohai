@@ -8,5 +8,5 @@ require 'rack/fiber_pool'
 
 require 'ohai'
 
-use Rack::FiberPool
+use Rack::FiberPool, :size => 35
 run Ohai.new
